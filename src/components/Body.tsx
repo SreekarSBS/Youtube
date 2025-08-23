@@ -1,8 +1,9 @@
+import Sidebar from "./Sidebar"
 
 const Body = () => {
   return (
     <div>
-      Body
+      <Sidebar />
     </div>
   )
 }
