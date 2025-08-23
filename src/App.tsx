@@ -1,19 +1,18 @@
-import { Provider } from "react-redux"
 import Body from "./components/Body"
 import Header from "./components/Header"
-import appStore from "./utils/appStore"
+import { useAppSelector } from "./utils/types"
 
 
 function App() {
-
+const showDarkMode = useAppSelector(store => store.darkMode.showDarkMode)
 
   return (
-    <>
-    <Provider store = {appStore}>
+    <div className={ showDarkMode ? "bg-black" : "bg-white"}>
+   
      <Header />
      <Body />
-     </Provider>
-    </>
+    
+    </div>
   )
 }
 

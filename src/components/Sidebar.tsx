@@ -5,9 +5,9 @@ import { useAppSelector } from "../utils/types";
 
 const Sidebar = () => {
     const showSidebar = useAppSelector(store => store.sidebar.showSidebar)
-
+    const showDarkMode = useAppSelector(store => store.darkMode.showDarkMode) 
     return showSidebar && (
-        <div className="p-4 bg-gray-200 w-34 h-screen">
+        <div className={`p-4 ${showDarkMode ? "bg-gray-800 text-white" : "bg-gray-200"}  w-34 h-screen`}>
             <ul >
                 <SidebarList items = {itemsDefault} />
                 <hr />
