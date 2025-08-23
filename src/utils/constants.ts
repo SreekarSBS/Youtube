@@ -3,3 +3,39 @@ export const YT_LOGO_URL = "https://upload.wikimedia.org/wikipedia/commons/thumb
 export const itemsDefault = ["Home", "Shorts", "Subscriptions", "Music"];
 export const itemsYou = ["History", "Playlists", "Your Videos", "Your Courses", "Watch Later", "Liked videos"];
 export const itemsExplore = ["Shopping", "Music", "Movies", "Live", "Gaming"];
+export const categories= [
+
+    "All"
+    ,
+   " Telugu cinema"
+    ,
+    "Music"
+    ,
+    "Mixes"
+    ,
+    "Gaming"
+    ,
+    "Thrillers"
+    ,
+    "Science fiction"
+    ,
+    "Sahasranama"
+    ,
+    "Computer programming"
+    ,
+    "Sitcoms"
+    ,
+    "Mantras"
+    ,
+    "Live"
+    ,
+    "Presentations"
+    ,
+    "Consumer Electronics"
+    ,
+    "Recently uploaded"
+    ,
+    "Watched"
+    ,
+   " New to you"
+    ]

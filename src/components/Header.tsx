@@ -1,10 +1,10 @@
-import { useDispatch } from "react-redux"
 import { MENU_ICON_URL, YT_LOGO_URL } from "../utils/constants"
 import { toggleSidebar } from "../utils/sidebarSlice"
+import { useAppDispatch } from "../utils/types"
 
 
 const Header = () => {
-  const dispatch = useDispatch()
+  const dispatch = useAppDispatch()
 
   const handleSidebarToggle = () => {
     dispatch(toggleSidebar())

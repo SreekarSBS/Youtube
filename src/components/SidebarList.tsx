@@ -1,8 +1,7 @@
-export interface Array {
-    items: [string];
-}
+import type { StringArray } from "../utils/types"
 
-const SidebarList = ({items} : Array) => {
+
+const SidebarList = ({items} : StringArray) => {
     return (
         <div className="py-4 cursor-pointer">
             {
