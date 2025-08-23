@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 import sidebarReducer from "./sidebarSlice"
+import darkModeReducer from "./darkModeSlice"
 const appStore = configureStore({
     reducer : {
-        sidebar : sidebarReducer
+        sidebar : sidebarReducer,
+        darkMode : darkModeReducer
     }
 })
 
