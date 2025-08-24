@@ -40,11 +40,11 @@ export const categories= [
    " New to you"
     ]
 export const YT_API_DATA = "https:youtube.googleapis.com/youtube/v3/videos?maxResults=20&part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=US&key=" + import.meta.env.VITE_API_KEY
-
+export const VIDEO_BY_ID = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=Ks-_Mh1QhMc&key=${import.meta.env.VITE_API_KEY}`
 export const API_OPTIONS = {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer ' + import.meta.env.VITE_TMDB_API_KEY
+      Authorization: 'Bearer ' + import.meta.env.VITE_API_KEY
     }
   };
