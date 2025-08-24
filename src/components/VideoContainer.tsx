@@ -24,7 +24,7 @@ const VideoContainer = () => {
     }
 
   return (
-    <div className='flex justify-around flex-wrap'>
+    <div className='flex justify-evenly  flex-wrap'>
       {
         popularVideos?.map((item) => {
             return (

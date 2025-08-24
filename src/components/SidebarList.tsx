@@ -3,9 +3,9 @@ import type { StringArray } from "../utils/types"
 
 const SidebarList = ({items} : StringArray) => {
     return (
-        <div className="py-4 cursor-pointer">
+        <div className="py-4 text-md  cursor-pointer">
             {
-                items.map((item,id) => <li key={id}>{item}</li>)
+                items.map((item,id) => <li className="hover:underline " key={id}>{item}</li>)
             }
         </div>
     )
