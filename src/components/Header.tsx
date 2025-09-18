@@ -31,7 +31,7 @@ const Header = () => {
             <div className="searchBar  flex mx-auto w-1/2 col-span-8 ">
                 <input className={ `w-4/5 border p-2 ${showDarkMode ? "border-gray-700 text-gray-200" : "border-gray-300 text-gray-900" }    rounded-l-full `} type="text" placeholder="Search" />
                 <button className={`border  ${showDarkMode ? "border-gray-700  bg-white/60" : "border-gray-300  bg-white" }   p-2 cursor-pointer  rounded-r-full `}>
-                    <img className="w-7  " src="https://endlessicons.com/wp-content/uploads/2015/08/search-icon-2-614x460.png" alt="Search-icon" />
+                    🚀
                 </button>
             </div>
             <div className="profile relative flex text-white  items-center justify-evenly col-span-1">

@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 import { YT_API_DATA } from '../utils/constants'
 import type { VideoItem } from '../utils/types'
-import VideoCard from './VideoCard'
+import VideoCard, { AdVideoCard } from './VideoCard'
 
 
 
 const VideoContainer = () => {
-    const [popularVideos,setPopularVideos] = useState<VideoItem[]>()
+    const [popularVideos,setPopularVideos] = useState<VideoItem[]>([])
     useEffect(() => {
         fetchYoutubePopularVideos()
     },[])
@@ -25,10 +25,13 @@ const VideoContainer = () => {
 
   return (
     <div className='flex justify-evenly  flex-wrap'>
+      <AdVideoCard item = {popularVideos[0]} />
       {
         popularVideos?.map((item) => {
-            return (
+            return (<>
+                
                 <VideoCard item = {item} />
+                </>
             )
         })
       }
